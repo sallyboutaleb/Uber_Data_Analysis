@@ -141,6 +141,12 @@ top_locations <- leaflet_data[order(-leaflet_data$trips), ] %>%
       geom_bar(stat = "identity", color = "black", fill = "pink") +
       labs(title = "Trips by Hour",
            x = "hour",
+# Shiny App Link 
+(https://sallyboutaleb21.shinyapps.io/UberData/)
+           
+           
+           
+           
            y = "Trip Count") 
           output$plot01 = renderPlot({trips_by_hour_chart})
 ```
